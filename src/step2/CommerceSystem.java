@@ -29,7 +29,7 @@ public class CommerceSystem implements  Runnable {
         System.out.println("0. 종료 | 프로그램 종료");
         String exit = scanner.nextLine();
         if (exit.equals("0")) {
-            System.out.println("프로그램을 종료합니다.");
+            System.out.println("커머스 플랫폼을 종료합니다.");
         }
     }
 }
