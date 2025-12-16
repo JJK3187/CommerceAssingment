@@ -4,7 +4,7 @@ public class Product {
 
     private String name;
     private int price;
-    private String descriprtion;
+    private String description;
     private int quantity;
 
     public String getName() {
@@ -15,8 +15,8 @@ public class Product {
         return price;
     }
 
-    public String getDescriprtion() {
-        return descriprtion;
+    public String getDescription() {
+        return description;
     }
 
     public int getQuantity() {
@@ -24,10 +24,10 @@ public class Product {
     }
 
 
-    public Product(String name, int price, String descriprtion, int quantity) {
+    public Product(String name, int price, String description, int quantity) {
         this.name = name;
         this.price = price;
-        this.descriprtion = descriprtion;
+        this.description = description;
         this.quantity = quantity;
     }
 

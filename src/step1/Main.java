@@ -23,7 +23,7 @@ public class Main {
         System.out.println("[ 실시간 커머스 플랫폼 - 전자제품 ]");
         int index = 1;
         for (Product product : products) {
-            System.out.println(index + ". " + product.getName() + " | " + product.getPrice() + " | " + product.getDescriprtion());
+            System.out.println(index + ". " + product.getName() + " | " + product.getPrice() + " | " + product.getDescription());
             index++;
         }
             System.out.println("0. 종료" + " | " + "프로그램 종료");
