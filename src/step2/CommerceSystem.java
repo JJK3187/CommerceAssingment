@@ -21,16 +21,15 @@ public class CommerceSystem implements  Runnable {
         products.add(product4);
 
         System.out.println("[ 실시간 커머스 플랫폼 - 전자제품 ]");
+        int index = 1;
         for (Product product : products) {
-            System.out.println("1. " + product1.getName() + " | " + product1.getPrice() + " | " + product1.getDescriprtion());
-            System.out.println("2. " + product2.getName() + " | " + product2.getPrice() + " | " + product2.getDescriprtion());
-            System.out.println("3. " + product3.getName() + " | " + product3.getPrice() + " | " + product3.getDescriprtion());
-            System.out.println("4. " + product4.getName() + " | " + product4.getPrice() + " | " + product4.getDescriprtion());
-            System.out.println("0. 종료" + " | " + "프로그램 종료");
-            String exit = scanner.nextLine();
-            if (exit.equals("0")) {
-                break;
-            }
+            System.out.println(index + ". " + product.getName() + " | " + product.getPrice() + " | " + product.getDescriprtion());
+            index++;
+        }
+        System.out.println("0. 종료 | 프로그램 종료");
+        String exit = scanner.nextLine();
+        if (exit.equals("0")) {
+            System.out.println("프로그램을 종료합니다.");
         }
     }
 }
