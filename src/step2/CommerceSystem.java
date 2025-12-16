@@ -1,7 +1,5 @@
 package step2;
 
-import step2.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
