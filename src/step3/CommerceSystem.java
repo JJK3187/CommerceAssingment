@@ -82,7 +82,7 @@ public class CommerceSystem implements Runnable {
 
             // 상품 선택
             try {
-                if (input >= 1 && input <= category.getCategoryName().length()) {
+                if (input >= 1 && input <= category.getProductCount()) {
                     category.displayProductDetail(input - 1);
                 } else {
                     System.out.println("잘못된 상품 번호입니다.");

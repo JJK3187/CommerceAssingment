@@ -31,6 +31,12 @@ public class Category {
         products.add(product);
     }
 
+    // 카테고리 내 상품 갯수 출력
+    public int getProductCount() {
+        return products.size();
+    }
+
+
     // 카테고리 출력
     public void displayCategory() {
         System.out.println("[ " + categoryName + " 카테고리 ]");
