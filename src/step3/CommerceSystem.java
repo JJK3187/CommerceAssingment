@@ -56,7 +56,7 @@ public class CommerceSystem implements Runnable {
 
            // 카테고리 선택
            try {
-               if (input >= 1) {
+               if (input >= 1 && input <= categories.size()) {
                    Category selectedCategory = categories.get(input - 1);
                    showCategoryMenu(selectedCategory, scanner);
                } else {
@@ -82,7 +82,7 @@ public class CommerceSystem implements Runnable {
 
             // 상품 선택
             try {
-                if (input >= 1 ) {
+                if (input >= 1 && input <= category.getCategoryName().length()) {
                     category.displayProductDetail(input - 1);
                 } else {
                     System.out.println("잘못된 상품 번호입니다.");
