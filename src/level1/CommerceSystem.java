@@ -62,7 +62,7 @@ public class CommerceSystem implements Runnable {
                System.out.println("1. 돌아가기");
                int input3 = scanner.nextInt();
                if (input3 == 1) {
-                   break;
+                   continue;
                }
            }
 
